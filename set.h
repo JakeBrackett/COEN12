@@ -14,11 +14,7 @@
 # ifndef SET_H
 # define SET_H
 
-typedef struct set {
-    int count;
-    int length;
-    char ** elts;
-} SET;
+typedef struct set SET;
 
 SET *createSet(int maxElts);
 

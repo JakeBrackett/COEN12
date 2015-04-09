@@ -13,7 +13,11 @@
 #include <string.h>
 #include "set.h"
 
-
+typedef struct set {
+    int count;
+    int length;
+    char ** elts;
+} SET;
 
 //mallocs space for a set, ititializes it and returns a pointer to the set
 // O(1)
