@@ -1,0 +1,43 @@
+unique
+------
+                              unsorted  sorted
+GreenEggsAndHam.txt             0m0.006s     ????
+Macbeth.txt                     0m0.098s     
+Genesis.txt                     0m0.101s     ????
+HoundOfTheBaskervilles.txt      0m0.305s     ????
+TheWarOfTheWorlds.txt           0m0.771s     ????
+TreasureIsland.txt              0m0.396s     ????
+TheSecretGarden.txt             0m0.367s     ????
+TheCountOfMonteCristo.txt       0m4.490s     ????
+TwentyThousandLeagues.txt       0m0.833s     ????
+Bible.txt                       0m4.806s     ????
+
+
+bincount
+--------
+                              unsorted  sorted
+GreenEggsAndHam.txt             0m0.005s     ????
+Macbeth.txt                     0m0.022s     ????
+Genesis.txt                     0m0.024s     ????
+HoundOfTheBaskervilles.txt      0m0.054s     ????
+TheWarOfTheWorlds.txt           0m0.067s     ????
+TreasureIsland.txt              0m0.068s     ????
+TheSecretGarden.txt             0m0.064s     ????
+TheCountOfMonteCristo.txt       0m0.680s     ????
+TwentyThousandLeagues.txt       0m0.126s      ????
+Bible.txt                       0m0.826s      ????
+
+
+parity
+------
+                              unsorted  sorted
+GreenEggsAndHam.txt             0m0.005s     ????
+Macbeth.txt                     0m0.359s     ????
+Genesis.txt                     0m0.437s     ????
+HoundOfTheBaskervilles.txt      0m1.712s    ????
+TheWarOfTheWorlds.txt           0m2.039s     ????
+TreasureIsland.txt              0m2.101s     ????
+TheSecretGarden.txt             0m1.912s     ????
+TheCountOfMonteCristo.txt       0m40.333s     ????
+TwentyThousandLeagues.txt       0m4.966s     ????
+Bible.txt                       0m46.156s    ????
