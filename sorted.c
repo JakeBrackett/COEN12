@@ -33,7 +33,7 @@ SET *createSet(int maxElts){
 }
 
 //frees the memory associated with a SET and the elts in it
-// O(1)
+// O(n)
 void destroySet(SET *sp){
     int i;
     assert(sp != NULL);
