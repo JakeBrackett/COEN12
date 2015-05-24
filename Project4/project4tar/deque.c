@@ -23,6 +23,8 @@ typedef struct deque{
     struct node *head;
 } DEQUE;
 
+//allocates space for a Deque
+//O(1)
 DEQUE *createDeque(void){
     DEQUE *dp;
     dp = malloc(sizeof(DEQUE));
@@ -35,23 +37,28 @@ DEQUE *createDeque(void){
     return dp;
 }
 
+//frees all the nodes in the deque then the deque itself
+//O(n)
 void destroyDeque(DEQUE *dp){
     NODE *np;
     assert(dp != NULL);
-    np = dp->head;
-    while(np->next != dp->head){
+    np = dp->head->next;
+    while(np != dp->head){
         np = np->next;
         free(np->prev);
     }
-    free(np);
+    free(dp->head);
     free(dp);
 }
 
+//O(n)
 int numItems(DEQUE *dp){
     assert(dp != NULL);
     return dp->count;
 }
 
+//Adds node to the start of deque
+//O(1)
 void addFirst(DEQUE *dp, int x){
     NODE *np, *dummy;
     assert(dp != NULL);
@@ -65,6 +72,8 @@ void addFirst(DEQUE *dp, int x){
     dp->count++;
 }
 
+//adds node to back of deque
+//O(1)
 void addLast(DEQUE *dp, int x){
     NODE *np;
     assert(dp != NULL);
@@ -78,10 +87,12 @@ void addLast(DEQUE *dp, int x){
     dp->count++;
 }
 
+//deletes the first node in the list after the dummy and returns its data
+//O(1)
 int removeFirst(DEQUE *dp){
     NODE *np;
     int data;
-    assert(dp != NULL);
+    assert(dp != NULL && dp->head->next != dp->head);
     np = dp->head->next;        //np is the node to be deleted
     data = np->data;            //store the data in np to be returned
     np->next->prev = dp->head;  //the node after np is the first node in the list, its prev pointer should be head
@@ -91,10 +102,12 @@ int removeFirst(DEQUE *dp){
     return data;
 }
 
+// deletes the last node in the list and returns the data from it
+// O(1)
 int removeLast(DEQUE *dp){
     NODE *np;
     int data;
-    assert(dp != NULL);
+    assert(dp != NULL && dp->head->prev != dp->head);
     np = dp->head->prev;        //np is the node to be deleted
     data = np->data;            //store the data in np to be returned
     np->prev->next = dp->head;  //the node before np is the last node in the list, its next pointer should be head
@@ -104,11 +117,15 @@ int removeLast(DEQUE *dp){
     return data;
 }
 
+//returns the data of the first node
+// O(1)
 int getFirst(DEQUE *dp){
     assert(dp != NULL && dp->count != 0);
     return dp->head->next->data;
 }
 
+//returns the data of the last node
+//O(1)
 int getLast(DEQUE *dp){
     assert(dp != NULL && dp->count != 0);
     return dp->head->prev->data;

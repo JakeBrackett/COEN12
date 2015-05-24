@@ -1,0 +1,43 @@
+unique
+------
+                                unsorted     sorted	hashing	
+GreenEggsAndHam.txt             0m0.008s     0m0.006s	0m0.005s
+Macbeth.txt                     0m0.094s     0m0.018s	0m0.009s
+Genesis.txt                     0m0.099s     0m0.021s	0m0.013s
+HoundOfTheBaskervilles.txt      0m0.305s     0m0.050s	0m0.018s
+TheWarOfTheWorlds.txt           0m0.772s     0m0.057s	0m0.018s
+TreasureIsland.txt              0m0.384s     0m0.055s	0m0.019s
+TheSecretGarden.txt             0m0.356s     0m0.055s	0m0.022s
+TheCountOfMonteCristo.txt       0m4.458s     0m0.387s	0m0.093s
+TwentyThousandLeagues.txt       0m0.794s     0m0.102s	0m0.027s
+Bible.txt                       0m4.704s     0m0.387s	0m0.135s
+
+
+bincount
+--------
+                                unsorted     sorted	hashing
+GreenEggsAndHam.txt             0m0.006s     0m0.004s	0m0.006s
+Macbeth.txt                     0m0.023s     0m0.016s	0m0.011s
+Genesis.txt                     0m0.031s     0m0.014s	0m0.014s	
+HoundOfTheBaskervilles.txt      0m0.049s     0m0.021s	0m0.004s
+TheWarOfTheWorlds.txt           0m0.072s     0m0.028s	0m0.019s
+TreasureIsland.txt              0m0.062s     0m0.040s	0m0.021s
+TheSecretGarden.txt             0m0.045s     0m0.031s	0m0.022s
+TheCountOfMonteCristo.txt       0m0.671s     0m0.145s	0m0.091s
+TwentyThousandLeagues.txt       0m0.126s     0m0.041s	0m0.030s
+Bible.txt                       0m0.873s     0m0.214s	0m0.136s
+
+
+parity
+------
+                                unsorted     sorted	hashing
+GreenEggsAndHam.txt             0m0.005s     0m0.006s	0m0.007s
+Macbeth.txt                     0m0.348s     0m0.064s	0m0.253s
+Genesis.txt                     0m0.447s     0m0.072s	0m0.205s
+HoundOfTheBaskervilles.txt      0m1.502s     0m0.230s	0m0.264s
+TheWarOfTheWorlds.txt           0m1.852s     0m0.253s	0m0.219s
+TreasureIsland.txt              0m1.989s     0m0.272s	0m0.223s
+TheSecretGarden.txt             0m1.882s     0m0.229s	0m0.223s
+TheCountOfMonteCristo.txt       0m39.921s    0m4.227s	0m0.378s
+TwentyThousandLeagues.txt       0m5.126s     0m0.564s	0m0.229s
+Bible.txt                       0m46.053s    0m4.092s	0m0.491s
