@@ -51,7 +51,7 @@ void destroyDeque(DEQUE *dp){
     free(dp);
 }
 
-//O(n)
+//O(1)
 int numItems(DEQUE *dp){
     assert(dp != NULL);
     return dp->count;
